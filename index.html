@@ -68,6 +68,25 @@
       color: #60a5fa;
     }
   </style>
+  <script>
+    window.onload = function () {
+      const tabs = document.querySelectorAll('.tab');
+      const sections = {
+        '📱 App Dev': '#apps',
+        '🌐 Website Dev': '#html5min',
+        '💻 Lua Scripting': '#lua',
+        '👨‍💻 All Coding Topics': '#html5min'
+      };
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = sections[tab.textContent.trim()];
+          if (target) {
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    };
+  </script>
 </head>
 <body>
   <header>
@@ -85,7 +104,7 @@
     <p>Your go-to site to learn about apps, websites, Lua, and everything coding!</p>
   </section>
 
-  <section class="tabs" id="apps">
+  <section class="tabs">
     <div class="tab">📱 App Dev</div>
     <div class="tab">🌐 Website Dev</div>
     <div class="tab">💻 Lua Scripting</div>
