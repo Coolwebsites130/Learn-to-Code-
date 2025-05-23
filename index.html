@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLearn Hub</title>
+  <link rel="icon" href="/mnt/data/4997543.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111827;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #1f2937;
+    }
+    header img {
+      height: 40px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #60a5fa;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+    .tab {
+      background: #1e40af;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 1rem;
+      width: 200px;
+      text-align: center;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .tab:hover {
+      background: #2563eb;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #60a5fa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/mnt/data/4997543.png" alt="CodeLearn Hub Logo">
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="#websites">Websites</a>
+      <a href="#lua">Lua</a>
+      <a href="#all">All Coding</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to CodeLearn Hub</h1>
+    <p>Your go-to site to learn about apps, websites, Lua, and everything coding!</p>
+  </section>
+
+  <section class="tabs" id="apps">
+    <div class="tab">📱 App Dev</div>
+    <div class="tab">🌐 Website Dev</div>
+    <div class="tab">💻 Lua Scripting</div>
+    <div class="tab">👨‍💻 All Coding Topics</div>
+  </section>
+
+  <section class="section" id="html5min">
+    <h2>🕸️ Learn HTML in 5 Mins</h2>
+    <p>HTML is the backbone of websites. Here’s a simple starter template:</p>
+    <pre style="background:#1f2937;padding:1rem;border-radius:.5rem;overflow-x:auto;"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+    &lt;p&gt;This is my first website.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    <p>Save this as <code>index.html</code>, double click it, boom 💥 website!</p>
+  </section>
+
+  <section class="section" id="lua">
+    <h2>🧠 Lua Scripting Intro for Roblox</h2>
+    <p>Here’s a script to print to the output in Roblox Studio:</p>
+    <pre style="background:#1f2937;padding:1rem;border-radius:.5rem;overflow-x:auto;"><code>print("Hello from Roblox!")
+
+-- More: Connect this to a part
+script.Parent.Touched:Connect(function()
+    print("Part touched!")
+end)
+</code></pre>
+    <p>Put this in a part’s script and you’re on your way to scripting magic 🧙‍♂️</p>
+  </section>
+
+  <section class="section" id="apps">
+    <h2>📱 Beginner App Dev Guide</h2>
+    <p>Use MIT App Inventor (super beginner-friendly) or Flutter (more pro) to make apps.</p>
+    <p>Try MIT App Inventor:</p>
+    <ol>
+      <li>Go to <a href="https://appinventor.mit.edu/" style="color:#93c5fd">appinventor.mit.edu</a></li>
+      <li>Drag buttons, inputs, etc. into the phone screen</li>
+      <li>Click “Blocks” tab to add logic</li>
+    </ol>
+    <p>Want help with Flutter setup? I gotchu — just say so 💬</p>
+  </section>
+</body>
+</html>
